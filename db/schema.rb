@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161220170725) do
-=======
-ActiveRecord::Schema.define(version: 20161215093650) do
->>>>>>> origin/master
 
   create_table "first_categories", force: :cascade do |t|
     t.string   "name"
@@ -23,7 +19,6 @@ ActiveRecord::Schema.define(version: 20161215093650) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
   create_table "function_categories", force: :cascade do |t|
     t.string   "name"
     t.text     "note"
@@ -73,17 +68,6 @@ ActiveRecord::Schema.define(version: 20161215093650) do
   end
 
   add_index "parts", ["part_category_id"], name: "index_parts_on_part_category_id"
-=======
-  create_table "functions", force: :cascade do |t|
-    t.string   "name"
-    t.text     "note"
-    t.integer  "second_category_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  add_index "functions", ["second_category_id"], name: "index_functions_on_second_category_id"
->>>>>>> origin/master
 
   create_table "second_categories", force: :cascade do |t|
     t.string   "name"
@@ -94,7 +78,6 @@ ActiveRecord::Schema.define(version: 20161215093650) do
 
   add_index "second_categories", ["first_category_id"], name: "index_second_categories_on_first_category_id"
 
-<<<<<<< HEAD
   create_table "techniques", force: :cascade do |t|
     t.string   "name"
     t.text     "note"
@@ -109,6 +92,4 @@ ActiveRecord::Schema.define(version: 20161215093650) do
   add_index "techniques", ["function_id"], name: "index_techniques_on_function_id"
   add_index "techniques", ["part_id"], name: "index_techniques_on_part_id"
 
-=======
->>>>>>> origin/master
 end

@@ -12,11 +12,8 @@ gem 'sprockets'#, '2.11.0'
 gem 'simple_form'
 # ransack
 gem 'ransack'
-<<<<<<< HEAD
 #pagenation
 gem 'kaminari'
-=======
->>>>>>> origin/master
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -27,7 +24,6 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'sqlite3-ruby', :require => 'sqlite3'
-<<<<<<< HEAD
   #output E-R
   gem 'rails-erd'
   #dot
@@ -36,11 +32,6 @@ end
 
 #gem 'rails-Graphviz'
 
-=======
-  gem 'rails-erd'
-end
-
->>>>>>> origin/master
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -53,13 +44,8 @@ gem 'coffee-script-source', '1.8.0'
 #gem 'therubyracer'#, platforms: :ruby
 
 #============Bootstrap
-<<<<<<< HEAD
 #gem 'less-rails' # Rails??less???g??????????BBootstrap??less?????????????
 #gem 'twitter-bootstrap-rails' # Bootstrap??{??
-=======
-#gem 'less-rails' # Rails��less���g����悤�ɂ���BBootstrap��less�ŏ�����Ă��邽��
-#gem 'twitter-bootstrap-rails' # Bootstrap�̖{��
->>>>>>> origin/master
 
 #
 

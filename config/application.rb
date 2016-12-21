@@ -1,11 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
-<<<<<<< HEAD
 #Using Ransack
 ENV['RANSACK_FORM_BUILDER'] = '::SimpleForm::FormBuilder'
 
-=======
->>>>>>> origin/master
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
