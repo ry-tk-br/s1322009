@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :techniques do
     collection do
       get 'search'
@@ -6,6 +7,11 @@ Rails.application.routes.draw do
   end
 
   get 'setting/index'
+=======
+  resources :functions
+  get 'setting/index'
+
+>>>>>>> origin/master
   get 'setting/set'
 
   root to: "top#index"

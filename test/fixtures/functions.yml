@@ -2,6 +2,7 @@
 
 one:
   name: MyString
+<<<<<<< HEAD
   function_category_id: 
   security: false
   saving: false
@@ -15,3 +16,12 @@ two:
   saving: false
   usabiliy: false
   quality: false
+=======
+  note: MyText
+  secondcategory_id: 
+
+two:
+  name: MyString
+  note: MyText
+  secondcategory_id: 
+>>>>>>> origin/master

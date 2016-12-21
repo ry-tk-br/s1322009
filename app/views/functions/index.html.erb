@@ -1,0 +1,38 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<h1>Listing Functions</h1>
+
+<table>
+
+  <div class="col-md-4">
+    <%= render 'search_form'%>
+  </div>
+
+  <div class="col-md-8">
+    <% @functions.each do |function| %>
+    <thead>
+      <tr>
+         <th><%= function.name %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+          <td><%= function.note %></td>
+        </tr>
+        <tr>
+          <td>
+            <%= link_to function, class: 'btn btn-default btn-left' do %>参照する<% end %>
+            <%= link_to edit_function_path(function), class: 'btn btn-default btn-left' do %>編集する<% end %>
+            <%= link_to function, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default btn-left' do %>消去する<% end %>
+
+          </td>
+        </tr>
+    </tbody>
+    <% end %>
+  </div>
+</table>
+
+<br>
+
+<%= link_to 'New Function', new_function_path %>

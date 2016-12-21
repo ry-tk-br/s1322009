@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+<<<<<<< HEAD
 FunctionCategory.create(name: 'ä»®æƒ³åŒ–')
 FunctionCategory.create(name: 'çµŒè·¯åˆ¶å¾¡')
 FunctionCategory.create(name: 'ãƒ‘ã‚±ãƒƒãƒˆé®æ–­')
@@ -35,3 +36,14 @@ Function.create(name: 'DHCP'      ,function_category_id: 7,  purpose1: true,  pu
 
 
 
+=======
+FirstCategory.create(name: 'ƒZƒLƒ…ƒŠƒeƒB')
+FirstCategory.create(name: 'ƒ‹[ƒeƒBƒ“ƒO')
+FirstCategory.create(name: 'ƒRƒXƒg’áŒ¸')
+
+SecondCategory.create(name: 'ƒtƒ@ƒCƒAƒEƒH[ƒ‹', first_category_id: 1)
+SecondCategory.create(name: 'VPN' first_category_id: 1)
+SecondCategory.create(name: 'NAT' first_category_id: 1)
+SecondCategory.create(name: 'DUM1' first_category_id: 2)
+SecondCategory.create(name: 'DUM2' first_category_id: 3)
+>>>>>>> origin/master
