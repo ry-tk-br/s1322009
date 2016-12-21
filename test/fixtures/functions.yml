@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  function_category_id: 
+  security: false
+  saving: false
+  usabiliy: false
+  quality: false
+
+two:
+  name: MyString
+  function_category_id: 
+  security: false
+  saving: false
+  usabiliy: false
+  quality: false

@@ -1,0 +1,1 @@
+json.array! @techniques, partial: 'functions/function', as: :technique

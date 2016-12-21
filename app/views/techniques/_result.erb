@@ -1,0 +1,19 @@
+<%#= page_entries_info @technique %>
+
+<% @techniques.each do |technique| %>
+    <ul class="list-group">
+      <%= link_to technique, class: 'list-group-item' do %>
+        <h5><%= technique.name %></h5><br>
+        <%= technique.note %><br>
+      <% end %>
+      <li class="list-group-item">
+        <div class="btn-group" role="group">
+          <%= link_to technique, class: 'btn btn-default' do %>参照する<% end %>
+          <%= link_to edit_technique_path(technique), class: 'btn btn-default' do %>編集する<% end %>
+          <%= link_to technique, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do %>消去する<% end %>
+        </div>
+      </li>
+    </ul>
+<% end %>
+
+<%#= paginate @technique %>

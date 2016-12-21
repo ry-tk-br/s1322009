@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  software_category_id: 
+  lang1: 
+  lang2: false
+  lang3: false
+  lang4: false
+  openflow: 
+  netconf: false
+  ovsdb: false
+  spec1: 1
+  spec2: 1
+  spec3: 1
+  spec4: 1
+  spec5: 1
+
+two:
+  name: MyString
+  software_category_id: 
+  lang1: 
+  lang2: false
+  lang3: false
+  lang4: false
+  openflow: 
+  netconf: false
+  ovsdb: false
+  spec1: 1
+  spec2: 1
+  spec3: 1
+  spec4: 1
+  spec5: 1

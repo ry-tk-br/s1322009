@@ -1,0 +1,30 @@
+<!--<p id="notice"><%= notice %></p> -->
+
+<h1><%= @technique.name %></h1>
+
+
+<p>
+  <strong>備考:</strong>
+  <%= @technique.note %>
+</p>
+<p>
+  <strong>長所:</strong>
+  <%= @technique.adv_text %>
+</p>
+<p>
+  <strong>短所:</strong>
+  <%= @technique.sh_text %>
+</p>
+<p>
+  <strong>機能ID:</strong>
+  <%= @technique.function_id %>
+</p>
+<p>
+  <strong>部品ID:</strong>
+  <%= @technique.part_id %>
+</p>
+
+<%#= link_to 'Edit', edit_technique_path(@technique) %>
+<%#= link_to 'Back', techniques_path %>
+
+<%= link_to techniques_path, class: 'btn btn-default' do %>戻る<% end %>

@@ -1,0 +1,69 @@
+﻿<%= render layout: 'shared/search_box' do %>
+
+  <%= search_form_for(@q, url: search_functions_path, html: { method: :get, class: 'form-horizontal', role: 'form' }) do |f| %>
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sampleContentA" data-toggle="tab">特性から探す</a></li>
+        <li><a href="#sampleContentB" data-toggle="tab">機能から探す</a></li>
+        <li><a href="#sampleContentC" data-toggle="tab">カテゴリから探す</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="sampleContentA">
+          <div class="row">
+            <div class="col-sm-1">
+              <!-- 調整用です -->
+            </div>
+            <div class="col-sm-4">
+              <div class="checkbox"><input type="checkbox" value="spec1" name="specs" id="specs_spec1">
+                <label for="specs_spec1">操作性</label>
+              </div>
+              <div class="checkbox"><input type="checkbox" value="spec2" name="specs" id="specs_spec2">
+                <label for="specs_spec2">導入コスト</label>
+              </div>
+              <div class="checkbox"><input type="checkbox" value="spec3" name="specs" id="specs_spec3">
+                <label for="specs_spec3">拡張性</label>
+              </div>
+              <div class="checkbox"><input type="checkbox" value="spec4" name="specs" id="specs_spec4">
+                <label for="specs_spec4">運用性</label>
+              </div>
+              <div class="checkbox"><input type="checkbox" value="spec5" name="specs" id="specs_spec5">
+                <label for="specs_spec5">機能性</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="sampleContentB">
+          <div class="row">
+            <div class="col-sm-1">
+              <!-- 調整用です -->
+            </div>
+            <div class="col-sm-4">
+              <div class="checkbox"><input type="checkbox" value="func1" name="funcs" id="funcs_func1">
+                <label for="funcs_func1">ファイアウォール</label>
+              </div>
+              <div class="checkbox"><input type="checkbox" value="func2" name="funcs" id="funcs_func2">
+                <label for="funcs_func2">ＮＡＴ</label>
+              </div>
+              <div class="checkbox"><input type="checkbox" value="func3" name="funcs" id="funcs_func3">
+                <label for="funcs_func3">ＶＰＮ</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="sampleContentC">
+          <%= f.input :hoge %>
+          <%= f.input :piyo %>
+          <%= f.button :submit %>
+        </div>
+      </div>
+
+    <div class="col-sm-12 row text-center">
+      <%= link_to functions_path, class: 'btn btn-default btn-left' do %>クリア<% end %>
+      <button class="btn btn-default btn-primary" type="submit"><i class="fa fa-search"></i> 検索</button>
+      <br>
+    </div>
+
+    </div>
+  <% end %>
+<% end %>

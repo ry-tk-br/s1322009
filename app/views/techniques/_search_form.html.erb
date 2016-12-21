@@ -1,0 +1,62 @@
+﻿<%= render layout: 'shared/search_box' do %>
+
+  <%#= search_form_for(@q, url: search_techniques_path, html: { method: :get, class: 'form-horizontal', role: 'form' }) do |f| %>
+  <%= form_for(@technique, url: search_techniques_path, html: { method: :get, class: 'form-horizontal', role: 'form' }) do |f| %>
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sampleContentA" data-toggle="tab">目的</a></li>
+        <li><a href="#sampleContentB" data-toggle="tab">特性</a></li>
+        <li><a href="#sampleContentC" data-toggle="tab">オプション</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="sampleContentA">
+          <div class="row">
+            <div class="col-sm-1">
+              <!-- 調整用です -->
+            </div>
+            <div class="col-sm-5">
+              <div class="row">
+                <div class="form-group">
+                  <%= f.check_box :purpose1 %><%= f.label :purpose1, 'セキュリティ' %>
+                </div>
+                <div class="form-group">
+                  <%= f.check_box :purpose2 %><%= f.label :purpose2, 'コスト削減' %>
+                </div>
+                <div class="form-group">
+                  <%= f.check_box :purpose3 %><%= f.label :purpose3, '利便性' %>
+                </div>
+                <div class="form-group">
+                  <%= f.check_box :purpose4 %><%= f.label :purpose4, '品質' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="sampleContentB">
+          <div class="row">
+            <div class="col-sm-1">
+              <!-- 調整用です -->
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane" id="sampleContentC">
+          <div class="row">
+            <div class="col-sm-1">
+              <!-- 調整用です -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    <div class="col-sm-12 row text-center">
+      <%= link_to techniques_path, class: 'btn btn-default btn-left' do %>クリア<% end %>
+      <button class="btn btn-default btn-primary" type="submit"><i class="fa fa-search"></i> 検索</button>
+      <br>
+    </div>
+
+    </div>
+  <% end %>
+<% end %>

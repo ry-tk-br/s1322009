@@ -1,0 +1,93 @@
+digraph S1322009 {
+rankdir = "LR";
+ranksep = "0.5";
+nodesep = "0.4";
+pad = "0.4,0.4";
+margin = "0,0";
+concentrate = "true";
+labelloc = "t";
+fontsize = "13";
+fontname = "Arial Bold";
+node[ shape  =  "Mrecord" , fontsize  =  "10" , fontname  =  "Arial" , margin  =  "0.07,0.05" , penwidth  =  "1.0"];
+edge[ fontname  =  "Arial" , fontsize  =  "7" , dir  =  "both" , arrowsize  =  "0.9" , penwidth  =  "1.0" , labelangle  =  "32" , labeldistance  =  "1.8"];
+rankdir = "TB";
+label = "S1322009 domain model\n\n";
+m_Function [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Function</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="function_category_id">function_category_id <font face="Arial Italic" color="grey60">integer FK</font></td></tr>
+  <tr><td align="left" width="130" port="id">id <font face="Arial Italic" color="grey30">integer PK</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey30">string</font></td></tr>
+  <tr><td align="left" width="130" port="note">note <font face="Arial Italic" color="grey30">text</font></td></tr>
+  <tr><td align="left" width="130" port="purpose1">purpose1 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="purpose2">purpose2 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="purpose3">purpose3 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="purpose4">purpose4 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+</table>
+>];
+m_FunctionCategory [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">FunctionCategory</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="id">id <font face="Arial Italic" color="grey30">integer PK</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey30">string</font></td></tr>
+  <tr><td align="left" width="130" port="note">note <font face="Arial Italic" color="grey30">text</font></td></tr>
+</table>
+>];
+m_Part [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Part</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="id">id <font face="Arial Italic" color="grey30">integer PK</font></td></tr>
+  <tr><td align="left" width="130" port="lang1">lang1 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="lang2">lang2 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="lang3">lang3 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="lang4">lang4 <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey30">string</font></td></tr>
+  <tr><td align="left" width="130" port="netconf">netconf <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="note">note <font face="Arial Italic" color="grey30">text</font></td></tr>
+  <tr><td align="left" width="130" port="openflow">openflow <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="ovsdb">ovsdb <font face="Arial Italic" color="grey30">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="part_category_id">part_category_id <font face="Arial Italic" color="grey30">integer FK</font></td></tr>
+  <tr><td align="left" width="130" port="spec1">spec1 <font face="Arial Italic" color="grey30">integer</font></td></tr>
+  <tr><td align="left" width="130" port="spec2">spec2 <font face="Arial Italic" color="grey30">integer</font></td></tr>
+  <tr><td align="left" width="130" port="spec3">spec3 <font face="Arial Italic" color="grey30">integer</font></td></tr>
+  <tr><td align="left" width="130" port="spec4">spec4 <font face="Arial Italic" color="grey30">integer</font></td></tr>
+  <tr><td align="left" width="130" port="spec5">spec5 <font face="Arial Italic" color="grey30">integer</font></td></tr>
+</table>
+>];
+m_PartCategory [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">PartCategory</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="id">id <font face="Arial Italic" color="grey30">integer PK</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey30">string</font></td></tr>
+  <tr><td align="left" width="130" port="note">note <font face="Arial Italic" color="grey30">text</font></td></tr>
+</table>
+>];
+m_Technique [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Technique</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="adv_text">adv_text <font face="Arial Italic" color="grey30">text</font></td></tr>
+  <tr><td align="left" width="130" port="function_id">function_id <font face="Arial Italic" color="grey30">integer FK</font></td></tr>
+  <tr><td align="left" width="130" port="id">id <font face="Arial Italic" color="grey30">integer PK</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey30">string</font></td></tr>
+  <tr><td align="left" width="130" port="note">note <font face="Arial Italic" color="grey30">text</font></td></tr>
+  <tr><td align="left" width="130" port="part_id">part_id <font face="Arial Italic" color="grey30">integer FK</font></td></tr>
+  <tr><td align="left" width="130" port="sh_text">sh_text <font face="Arial Italic" color="grey30">text</font></td></tr>
+</table>
+>];
+  m_FunctionCategory -> m_Function [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_Function -> m_Technique [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_FunctionCategory -> m_Technique [style = "dotted", arrowhead = "normal", arrowtail = "none", weight = "1", constraint = "false"];
+  m_PartCategory -> m_Part [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_Part -> m_Technique [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_PartCategory -> m_Technique [style = "dotted", arrowhead = "normal", arrowtail = "none", weight = "1", constraint = "false"];
+}

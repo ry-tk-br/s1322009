@@ -1,0 +1,31 @@
+﻿# coding: utf-8
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S1322009</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+ <%= render 'layouts/header' %>
+ <div class="container">
+   <div class="row">
+     <br><br><br>
+   </div>
+   <div class="row">
+     <% flash.each do |name, msg| %>
+         <div class="alert alert-<%= name == "notice" ? "success" : "error" %>">
+           <a class="close" data-dismiss="alert">×</a>
+           <%= msg %>
+         </div>
+     <% end %>
+     <div class="span8">
+       <%= yield %>
+     </div>
+   </div>
+ </div>
+
+</body>
+</html>

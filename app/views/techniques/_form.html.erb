@@ -1,0 +1,41 @@
+<%= form_for(@technique) do |f| %>
+  <% if @technique.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@technique.errors.count, "error") %> prohibited this function from being saved:</h2>
+
+      <ul>
+      <% @function.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :function_id %><br>
+    <%= f.number_field :function_id %>
+  </div>
+  <div class="field">
+    <%= f.label :part_id %><br>
+    <%= f.number_field :part_id %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :adv_text %><br>
+    <%= f.text_area :adv_text %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_text %><br>
+    <%= f.text_area :sh_text %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
