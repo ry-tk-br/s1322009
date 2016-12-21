@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21f11d3b-16e4-4f52-b845-de62481e0b7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erd.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__s1322009.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__s1322009.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__s1322009.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__s1322009.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/techniques/_search_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/techniques/_search_form.html.erb.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/models_complete.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/first_category.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/second_category.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/functions/_search_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161215093125_create_first_categories.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161215093157_create_second_categories.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161215093650_create_functions.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/first_categories.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/second_categories.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/first_category_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/second_category_test.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/functions.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/techniques.coffee" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/functions.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/techniques.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/functions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/techniques_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/function.rb" afterPath="$PROJECT_DIR$/app/models/technique.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/techniques/_form.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/_function.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/techniques/_function.json.jbuilder" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/techniques/edit.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/techniques/index.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/index.html.erb.bak" afterPath="$PROJECT_DIR$/app/views/techniques/index.html.erb.bak" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/techniques/index.json.jbuilder" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/techniques/new.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/techniques/show.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/functions/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/techniques/show.json.jbuilder" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/fixtures/functions.yml" afterPath="$PROJECT_DIR$/test/fixtures/techniques.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/s1322009.iml" afterPath="$PROJECT_DIR$/.idea/s1322009.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/top/index.html.erb" afterPath="$PROJECT_DIR$/app/views/top/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/functions_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/functions_controller_test.rb" />
-    </list>
+    <list default="true" id="21f11d3b-16e4-4f52-b845-de62481e0b7a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -73,16 +28,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="techniques_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/techniques_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -661,12 +606,12 @@
       <updated>1481861076028</updated>
       <workItem from="1481861077232" duration="9223000" />
       <workItem from="1482119295632" duration="5086000" />
-      <workItem from="1482227908772" duration="27575000" />
+      <workItem from="1482227908772" duration="28181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41884000" />
+    <option name="totallyTimeSpent" value="42490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -1028,14 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/techniques_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/techniques/_result.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1096,6 +1033,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-93">
           <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/techniques_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
