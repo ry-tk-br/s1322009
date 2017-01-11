@@ -38,7 +38,68 @@
             <div class="col-sm-1">
               <!-- 調整用です -->
             </div>
-
+            <div class="col-sm-5">
+              操作性
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                  <input type="radio" autocomplete="off" checked> 低
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 中
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 高
+                </label>
+              </div>
+              導入コスト
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                  <input type="radio" autocomplete="off" checked> 低
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 中
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 高
+                </label>
+              </div>
+              拡張性
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                  <input type="radio" autocomplete="off" checked> 低
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 中
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 高
+                </label>
+              </div>
+              運用性
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                  <input type="radio" autocomplete="off" checked> 低
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 中
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 高
+                </label>
+              </div>
+              機能性
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                  <input type="radio" autocomplete="off" checked> 低
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 中
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> 高
+                </label>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane" id="sampleContentC">
@@ -46,11 +107,52 @@
             <div class="col-sm-1">
               <!-- 調整用です -->
             </div>
+            <div class="col-sm-10">
+              言語<br>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> C
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> Ruby
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> Python
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> Java
+                </label>
+              </div>
+              <br>
+              プロトコル<br>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> OpenFlow
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> NETCONF
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> OVSDB
+                </label>
+              </div>
+              <br>
+              環境<br>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> VirtualBox
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" autocomplete="off"> VMWare
+                </label>
+              </div>
+            </div>
 
           </div>
         </div>
       </div>
 
+    <br>
     <div class="col-sm-12 row text-center">
       <%= link_to techniques_path, class: 'btn btn-default btn-left' do %>クリア<% end %>
       <button class="btn btn-default btn-primary" type="submit"><i class="fa fa-search"></i> 検索</button>
