@@ -72,7 +72,7 @@ class TechniquesController < ApplicationController
   # PATCH/PUT /functions/1.json
   def update
     respond_to do |format|
-      if @technique.update(function_params)
+      if @technique.update(technique_params)
         format.html { redirect_to @technique, notice: 'Function was successfully updated.' }
         format.json { render :show, status: :ok, location: @technique }
       else
