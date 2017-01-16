@@ -6,32 +6,24 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-FunctionCategory.create(name: '仮想化')
-FunctionCategory.create(name: '経路制御')
-FunctionCategory.create(name: 'パケット遮断')
-FunctionCategory.create(name: '専用線')
-FunctionCategory.create(name: 'アドレス交換')
-FunctionCategory.create(name: '転送')
-FunctionCategory.create(name: '自動割り振り')
+require "csv"
 
-PartCategory.create(name: 'SDNコントローラー')
-PartCategory.create(name: 'ソフトウェアスイッチ')
-PartCategory.create(name: 'ソフトウェアルータ')
-PartCategory.create(name: 'オペレーティングシステム')
+CSV.foreach('db/part.csv', encoding: 'Shift_JIS:UTF-8') do |row|
+  Part.create(:name => row[0], :part_category_id => row[1], :lang1 => row[2], :lang2 => row[3], :lang3 => row[4], :lang4 => row[5], :openflow => row[6], :netconf => row[7], :ovsdb => row[8], :spec1 => row[9], :spec2 => row[10], :spec3 => row[11], :spec4 => row[12], :spec5 => row[13], :note1 => row[14], :note2 => row[15], :supported => row[16])
+end
 
-Function.create(name: 'VXLAN'     ,function_category_id: 1,  purpose1: true,  purpose2: true,  purpose3: true,  purpose4: true)
-Function.create(name: 'NVGRE'     ,function_category_id: 1,  purpose1: true,  purpose2: true,  purpose3: true,  purpose4: true)
-Function.create(name: 'VLAN'      ,function_category_id: 1,  purpose1: true,  purpose2: true,  purpose3: true,  purpose4: true)
-Function.create(name: 'BGP'       ,function_category_id: 2,  purpose1: false,  purpose2: false,  purpose3: true,  purpose4: true)
-Function.create(name: 'OSPF'      ,function_category_id: 2,  purpose1: false,  purpose2: false,  purpose3: true,  purpose4: true)
-Function.create(name: 'EIGRP'     ,function_category_id: 2,  purpose1: false,  purpose2: false,  purpose3: true,  purpose4: true)
-Function.create(name: 'LISP'      ,function_category_id: 1,  purpose1: false,  purpose2: true,  purpose3: false,  purpose4: false)
-Function.create(name: 'FW'        ,function_category_id: 3,  purpose1: true,  purpose2: false,  purpose3: false,  purpose4: false)
-Function.create(name: 'VPN'       ,function_category_id: 4,  purpose1: true,  purpose2: false,  purpose3: false,  purpose4: false)
-Function.create(name: 'NAT'       ,function_category_id: 5,  purpose1: true,  purpose2: false,  purpose3: false,  purpose4: false)
-Function.create(name: 'L2SW'      ,function_category_id: 6,  purpose1: false,  purpose2: true,  purpose3: true,  purpose4: true)
-Function.create(name: 'L3SW '     ,function_category_id: 6,  purpose1: false,  purpose2: true,  purpose3: true,  purpose4: true)
-Function.create(name: 'DHCP'      ,function_category_id: 7,  purpose1: true,  purpose2: false,  purpose3: true,  purpose4: false)
+CSV.foreach('db/part_category.csv', encoding: 'Shift_JIS:UTF-8') do |row|
+  PartCategory.create(:name => row[0], :note => row[1])
+end
 
+CSV.foreach('db/function.csv', encoding: 'Shift_JIS:UTF-8') do |row|
+  Function.create(:name => row[0], :function_category_id => row[1], :purpose1 => row[2], :purpose2 => row[3], :purpose3 => row[4], :purpose4 => row[5], :note => row[6])
+end
 
+CSV.foreach('db/function_category.csv', encoding: 'Shift_JIS:UTF-8') do |row|
+  FunctionCategory.create(:name => row[0], :note => row[1])
+end
 
+CSV.foreach('db/technique.csv', encoding: 'Shift_JIS:UTF-8') do |row|
+  Technique.create(:name => row[0], :function_id => row[1], :part_id => row[2], :note => row[3], :adv_text => row[4], :sh_text => row[5])
+end

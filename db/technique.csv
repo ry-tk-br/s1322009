@@ -1,0 +1,1 @@
+OpenDaylightを使ったL2スイッチ機能,11,3,feature:install odl-restconf odl-l2switch-switch odl-mdsal-apidocs odl-dlux-coreを実行し、インストールします。,動作したまま機能の追加が可能です。,URLを使って直接ダウンロードする必要があります。

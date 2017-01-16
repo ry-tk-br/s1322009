@@ -14,16 +14,13 @@ class TechniquesController < ApplicationController
     @techniques = @technique
                       .matches
     #@technique = @technique.
-
-    @functions = Function.all
-    @parts = Part.all
-    @function_categories = FunctionCategory.all
-    @part_categories = PartCategory.all
   end
 
   # GET /functions/1
   # GET /functions/1.json
   def show
+    #@parts = Part.find_by(id: @technique.part_id)
+    @parts = Part.find(@technique.part_id)
   end
 
   # GET /functions/new

@@ -2,18 +2,39 @@
 
 <h1><%= @technique.name %></h1>
 
+<p>
 
-<p>
-  <strong>長所:</strong>
-  <%= @technique.adv_text %>
-</p>
-<p>
-  <strong>短所:</strong>
-  <%= @technique.sh_text %>
-</p>
-<p>
-  <strong>備考:</strong>
-  <%= @technique.note %>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<%= @parts.name %>の特徴
+	</div>
+	<div class="panel-body">
+		<%= @parts.note1 %>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		長所・短所
+	</div>
+	<div class="panel-body">
+		<strong>長所</strong><br>
+		<%= @technique.adv_text %><br>
+		<strong>短所</strong><br>
+		<%= @technique.sh_text %><br>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		実装方法
+	</div>
+	<div class="panel-body">
+		<%= @parts.note2 %>
+		<%= @technique.note %>
+	</div>
+</div>
+
 </p>
 
 <%#= link_to 'Edit', edit_technique_path(@technique) %>

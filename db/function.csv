@@ -1,0 +1,13 @@
+VXLAN,1,true,true,true,true
+NVGRE,1,true,true,true,true
+VLAN,1,true,true,true,true
+BGP,2,false,false,true,true
+OSPF,2,false,false,true,true
+EIGRP,2,false,false,true,true
+LISP,1,false,true,false,false
+FW,3,true,false,false,false
+VPN,4,true,false,false,false
+NAT,5,true,false,false,false
+L2SW,6,false,true,true,true
+L3SW,6,false,true,true,true
+DHCP,7,true,false,true,false
